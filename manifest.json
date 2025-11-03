@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Privacy Armor",
+  "version": "0.1.1",
+  "description": "Tracker blocker + fingerprint surface reducer. Defensive privacy tool. Made by Threadlinee",
+  "author": "Threadlinee",
+  "permissions": [
+    "storage",
+    "scripting",
+    "tabs",
+    "declarativeNetRequest",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_icon": "src/icon.png"
+  },
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "options_page": "src/options.html",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content-hook.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": { "16": "src/icon.png", "128": "src/icon.png" },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules_dynamic.json"
+      }
+    ]
+  }
+}
